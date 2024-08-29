@@ -16,12 +16,12 @@ mysql -uroot -pezen
 use mysql;
 
 // user 생성 구문
-create user 'mysqlUser2'@'localhost' identified by 'mysql';
+create user 'myUser2'@'localhost' identified by 'mysql';
 (=> create user '유저 아이디'@'localhost' identified by '비밀번호';)
 
 // 권한 부여
-grant * privileges on textdb.* to 'mysqlUser2'@'localhost' with grant option;
-(=> grant all privileges on textdb.* to 'mysqlUser2'@'localhost' 추가 옵션;)
+grant all privileges on textdb.* to 'myUser2'@'localhost' with grant option;
+(=> grant all privileges on textdb.* to 'myUser2'@'localhost' 추가 옵션;)
 
 // 권한 적용
 flush privileges;
